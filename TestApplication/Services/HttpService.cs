@@ -23,7 +23,6 @@ namespace TestApplication.Services
                 Credentials = CredentialCache.DefaultCredentials,
                 AllowAutoRedirect = true
             };
-            httpClient = new HttpClient(handler);
             httpClient = new HttpClient(handler)
             {
                 BaseAddress = new Uri(_configuration["BaseUrl"])
